@@ -1,0 +1,119 @@
+body {
+    /*background-color: darkseagreen;*/
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 20px;
+}
+.board {
+    background-color: #d4edda;
+    border: 3px solid #343a40;
+    padding: 0px 10px;
+}
+
+.space, .corner-space {
+    border: 2px solid #343a40;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+
+}
+
+.largeText{
+    font-size:20px
+}
+.corner-space {
+    background-color: #e9ecef;
+}
+
+.space {
+    background-color: #d4edda;
+    position: relative;
+    flex-direction: column;
+}
+
+:is(.space, .corner-space){
+    height:130px;
+}
+
+.col-x-custom{
+    width: 7.69%;
+}
+.col-y-custom {
+    width: 15.38%;
+}
+
+.col-middle-custom {
+    width: 84.62%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    transform: rotate(90deg)
+}
+.right {
+    transform: rotate(-90deg)
+}
+.flip-both {
+    transform: scale(-1, -1);
+}
+
+.property-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #343a40;
+
+}
+
+.purple { background-color: purple; }
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.orange { background-color: coral; }
+.green { background-color: green; }
+.blue { background-color: darkblue; }
+.lightblue { background-color: lightskyblue; }
+.brown { background-color: saddlebrown; }
+.pink { background-color: deeppink; }
+
+.board-image {
+    width: 40%;
+    height: auto;
+    transform: rotate(45deg);
+}
+
+.property-image{
+    width: 100%;
+    height: auto;
+}
+
+.corner-image{
+    width: 100%;
+    transform: rotate(45deg) translateY(-30%) ;
+}
+.go-corner-image{
+    width: 90%;
+    height: auto;
+    transform: rotate(-45deg) translateY(10%) ;
+}
+.jail-corner {
+    transform: rotate(-135deg);
+}
+
+.currency-sign::before {
+    content: "£";
+}
+
+.price {
+    margin-top: auto; /* Push the price to the bottom */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.propertyName{
+    height:50px
+}
+
