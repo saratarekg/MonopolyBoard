@@ -9,6 +9,7 @@ body {
 
 .space, .corner-space {
     border: 2px solid #343a40;
+    background-color: #d4edda;
     text-align: center;
     font-size: 13px;
     padding: 15px;
@@ -21,12 +22,7 @@ body {
     font-size:20px
 }
 
-.corner-space {
-    background-color: #e9ecef;
-}
-
 .space {
-    background-color: #d4edda;
     position: relative;
     flex-direction: column;
 }
@@ -113,15 +109,15 @@ body {
 }
 .corner-image{
     width: 100%;
-    transform: rotate(45deg) translateY(-30%) ;
+    transform: rotate(45deg) translateY(-40%) ;
 }
 .go-corner-image{
     width: 90%;
     height: auto;
-    transform: rotate(-45deg) translateY(10%) ;
+    transform: rotate(-45deg) translateY(30%) translateX(-15%);
 }
 .jail-corner {
-    transform: rotate(-135deg);
+    transform: rotate(-135deg)
 }
 
 .price::before {
